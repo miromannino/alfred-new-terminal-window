@@ -1,3 +1,5 @@
+# Copyright (c) 2015 Miro Mannino
+
 import xml.etree.ElementTree as ET
 import biplist
 import os
@@ -7,6 +9,7 @@ import sys
 iTerm_CONFIG_PATH = os.path.join(os.environ["HOME"], "Library", "Preferences", "com.googlecode.iterm2.plist")
 
 def readITermConfig(query):
+  query = query.strip()
   rE = ET.Element('items')
   if os.path.isfile(iTerm_CONFIG_PATH):
     try:
@@ -17,7 +20,7 @@ def readITermConfig(query):
         if (item.get('Guid') == defaultBookmarkGUID): continue
         if len(query) > 0 and profileName.lower().find(query.lower()) == -1: continue
         iE = ET.SubElement(rE, 'item', valid = 'yes', arg = profileName, autocomplete = profileName)
-        tE = ET.SubElement(iE, 'title')
+        tE = ET.SubElement(iE, 'title') 
         tE.text = 'New iTerm window'
         stE = ET.SubElement(iE, 'subtitle')
         stE.text = profileName

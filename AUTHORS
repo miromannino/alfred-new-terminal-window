@@ -1,0 +1,8 @@
+Miro Mannnino (miro.mannino@gmail.com)
+
+----------------------------------------------------------------------------
+
+This workflow uses a python library to read a plist file, called "biplist" 
+by Andrew Wooster (https://bitbucket.org/wooster/biplist).
+That library has been imported in this project ("biplist" folder), were
+one can find the list of its authors and license.
