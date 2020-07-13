@@ -35,10 +35,8 @@ One can also open iTerm directly with a profile in this way:
 General notes
 -------------
 
-- Compatible with Alfred 2 and Alfred 3
+- Compatible with Alfred 2, 3 and 4
 - The new window is placed in the current desktop
-- If a terminal window is open, it doesn't focus that window, but a new one will be created. If you want
-  to focus an existing Terminal, you can just write "iTerm" or "Terminal" using Alfred.
-- Once the workflow has been imported, feel free to change the default keywords if you don't like them.
+- Once the workflow has been imported, feel free to change the default keywords if you don't like them. For example you can have tw for the terminal instead of iTerm.
 - For high performances, the default iTerm profile will appear instantaneously, while the other will appear 
   after some milliseconds (because that requires to read the available iTerm profiles).
